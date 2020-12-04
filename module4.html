@@ -1,0 +1,48 @@
+<!Doctype html>
+<Html>
+<head>
+
+    <title>
+
+        gjeoigb
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+
+    </script>
+   
+
+
+
+</head>
+
+<body style="background-color:tomato;">
+<h2><center>
+    Here I want to perform cost based calulator using module.
+    </h2></center>
+    <br>
+    <br>
+    <div ng-app="my" ng-controller="myctrl">
+     Quantity   <input type="number" ng-model="Quantity">
+{{ Quantity }}
+        <br>
+      Price  <input type="number" ng-model="price">
+{{ price }}
+<br>
+<p>
+And The Total Output is here</p>{{ Quantity * price }}
+    </div>
+<script>
+var app=angular.module("my",[]);
+
+app.controller("myctrl",function($scope){
+
+    ($scope).Quantity='5';
+    ($scope).price='4';
+});
+
+</script>
+
+
+
+</body>
+</Html>
